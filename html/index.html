@@ -2,7 +2,7 @@
 <html lang="en" class="no-js">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>generator</title>
     <!-- dns prefetch -->
     <link href="http://www.google-analytics.com/" rel="dns-prefetch">
     <!-- meta -->
@@ -22,50 +22,65 @@
     </header>
     <!-- /header -->
 
-    <div class="container inner">
-        <!-- section -->
-        <section role="main">
-            <article>
-              <form action="">
-              <table>
-                <tr>
-                  <td><label for="pass">pass</label></td>
-                  <td><input type="text" name="pass" id="pass" value="911"></td>
-                </tr>
-                <tr>
-                  <td><label for="pass-two">pass-two</label></td>
-                  <td><input type="text" name="pass-two" id="pass-two" value="911"></td>
-                </tr>
-                <tr>
-                  <td><label for="random-number">random четное number 36 - 60</label></td>
-                  <td><input type="text" name="random-number" id="random-number" value="44"></td>
-                </tr>
-                <tr>
-                  <td><label for="occupation">occupation</label></td>
-                  <td><input type="text" name="occupation" id="occupation" value="Economist"></td>
-                </tr>
-                <tr>
-                  <td><label for="random-number-2">ЧИСЛО1 случайное четное число от 8000 до 12000</label></td>
-                  <td><input type="text" name="random-number-2" id="random-number-2" value="9600"></td>
-                </tr>
-                <tr>
-                  <td><label for="random-number-3">тут я задаю % (7,5-9,5) от ЧИСЛА1, сам процент будет задаваться вручную</label></td>
-                  <td><input type="text" name="random-number-3" id="random-number-3" value="7.5"></td>
-                </tr>
-              </table>
-              <a href="#" class="generator">generator</a>
+    <section role="main">
+        <article>
+          <form action="">
+          <button class="generator clip_button">генерировать</button>
+          <table>
+            <tr>
+              <td><label for="pass">пароль #1</label></td>
+              <td><input type="text" name="pass" id="pass" value=""></td>
+            </tr>
+            <tr>
+              <td><label for="pass-two">пароль #1 (дубль)</label></td>
+              <td><input type="text" name="pass-two" id="pass-two" value=""></td>
+            </tr>
+            <tr>
+              <td><label for="random-number">случайное четное с вилкой 36 - 60</label></td>
+              <td><input type="text" name="random-number" id="random-number" value=""></td>
+            </tr>
+            <tr>
+              <td><label for="occupation">должность</label></td>
+              <td><input type="text" name="occupation" id="occupation" value=""></td>
+            </tr>
+            <tr>
+              <td><label for="random-number-2">случайное четное с вилкой 8000 - 12000, число#1</label></td>
+              <td><input type="text" name="random-number-2" id="random-number-2" value=""></td>
+            </tr>
+            <tr>
+              <td><label for="number-5">#% (7.5-9.5) (разделитель - точка!)</label></td>
+              <td><input type="text" name="number-5" id="number-5" value="7.5"></td>
+            </tr>
+            <tr>
+              <td><label for="number-6">#% от число#1</label></td>
+              <td><input type="text" name="number-6" id="number-6" value=""></td>
+            </tr>
+            <tr>
+              <td><label for="number-7">6,2% от число#1</label></td>
+              <td><input type="text" name="number-7" id="number-7" value=""></td>
+            </tr>
+            <tr>
+              <td><label for="number-8">1,45% от число#1</label></td>
+              <td><input type="text" name="number-8" id="number-8" value=""></td>
+            </tr>
+            <tr>
+              <td><label for="number-9">случайное четное с вилкой 212 - 240</label></td>
+              <td><input type="text" name="number-9" id="number-9" value=""></td>
+            </tr>
+            <tr>
+              <td><label for="number-10">случайное четное с вилкой 164 - 212</label></td>
+              <td><input type="text" name="number-10" id="number-10" value=""></td>
+            </tr>
+          </table>
+          <div class="resulblock" id="resulblock">
 
+          </div>
+          <!-- /.resulblock -->
+          </form>
 
-
-
-
-              </form>
-
-            </article>
-        </section>
-        <!-- /section -->
-    </div>
-    <!-- /.container -->
+        </article>
+    </section>
+    <!-- /section -->
 </div>
 <!-- /wrapper -->
 
@@ -76,6 +91,7 @@
         <!-- copyright -->
         <p class="copyright">
             © 2015 Собственность.
+            <span class="acope">sdasa</span>
         </p>
         <!-- /copyright -->
     </div>
@@ -83,11 +99,9 @@
 </footer>
 <!-- /footer -->
 
-<div class="backhead bkblock0n">
-</div><!-- backhead bkblock0n -->
-
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/pGenerator.jquery.js"></script>
+    <script type="text/javascript" src="js/ZeroClipboard.min.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
 
 </body>

@@ -82,8 +82,9 @@ section {
 
     @extend .clearfix;
     table {
-      width: 60%;
       float: left;
+
+      width: 60%;
       td {
         width: 65%;
         padding: 5px 0;
@@ -113,13 +114,18 @@ section {
       }
     }
     .resulblock {
+      line-height: 1.4;
+
+      float: right;
+
       width: 38%;
       min-height: 100px;
-      float: right;
-      border: 3px solid orange;
       padding: 5px;
+
+      cursor: pointer;
+
+      border: 3px solid orange;
       border-radius: 4px;
-      line-height: 1.4;
     }
   }
 }
@@ -131,7 +137,6 @@ footer {
   width: 100%;
   height: $footer;
   margin: $footer_margin auto 0;
-
   .mainfooter {
     width: $width;
     height: 100%;

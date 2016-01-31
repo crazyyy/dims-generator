@@ -4,9 +4,10 @@
 @import '_comments.scss';
 @import '_font_fontawesome.scss';
 @import '_font_opensans.scss';
+@import 'font_matrx';
 @import '_sprite.scss';
 @import '_mixin.scss';
-$width: 980px;
+$width: 1300px;
 $footer: 20px;
 $footer_margin: $footer - 2 * $footer;
 $color: #444;
@@ -14,6 +15,7 @@ $color_a: #000;
 $trs: all .5s;
 
 body {
+  /* font-family: 'matrix'; */
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   font-weight: normal;

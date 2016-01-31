@@ -18,6 +18,7 @@ body {
   font-size: 14px;
   font-weight: normal;
 
+
   color: $color;
 }
 a {
@@ -66,6 +67,7 @@ section {
   padding: 0 0 $footer;
 
   @extend .inner;
+  @extend .clearfix;
   button {
     display: block;
 
@@ -76,6 +78,11 @@ section {
     text-align: center;
 
     border-radius: 8px;
+  }
+  .form-first {
+    width: 50%;
+    padding: 10px;
+    float: left;
   }
   form {
     width: 100%;
@@ -126,6 +133,7 @@ section {
 
       border: 3px solid orange;
       border-radius: 4px;
+      /* background-image: url(../img/bg.gif); */
     }
   }
 }

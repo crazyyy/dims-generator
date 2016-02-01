@@ -1,5 +1,4 @@
-
-var passSymbChar = ['!','@','#','$','%','&','*'];
+var passSymbChar = ['!', '@', '#', '$', '%', '&', '*'];
 var passNumChar = "23456789";
 var passAlphaChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var passAlphaSmChar = "abcdefghijklmnopqrstuvwxyz";
@@ -11,7 +10,7 @@ function getRandomFromArray(array) {
 
 function getRandomFromPossible(possible) {
   var text = "";
-  for( var i=0; i < 2; i++ )
+  for (var i = 0; i < 2; i++)
     text += possible.charAt(Math.floor(Math.random() * possible.length));
   return text;
 
@@ -19,41 +18,41 @@ function getRandomFromPossible(possible) {
 
 
 
-$(document).ready(function(){
+$(document).ready(function () {
   var passField = $('#pass'),
-  fieldThree = $('#random-number'),
-  fieldFour = $('#random-number-2'),
-  fieldFive = $('#number-5'),
-  fieldSix = $('#number-6'),
-  fieldSeven = $('#number-7'),
-  fieldEight = $('#number-8'),
-  fieldNine = $('#number-9'),
-  fieldTen = $('#number-10'),
-  resultField = $('#result'),
-  occupationField = $('#occupation'),
-  occupations = ["Cook", "Copywriter", "Car Mechanic", "Civil Engineer", "Credit analyst", "Consultant", "Cleaner", "Clerk", "Driver", "Economist", "Electrical Engineer", "Finance Broker", "Finance Manager", "Janitor", "Manager", "File Clerk", "Office Clerk", "Stock clerk", "Assistant", "Project engineer", "Radio Mechanics", "Sales Manager", "Sales Promoter", "Administrator", "Systems Analyst", "Web Designer", "Auditing clerk", "Bus driver", "Cashier", "Fitness Trainer", "Secretary", "Web Developer", "Marketing Manager", "Accountant", "Mechanical Engineer", "IT Manager", "Logistician", "Insurance Agent", "HR Specialist", "Receptionist", "Auto Mechanic", "Security Guard", "Guard", "Financial Analyst"],
-  minNumber = 36,
-  maxNumber = 60;
+    fieldThree = $('#random-number'),
+    fieldFour = $('#random-number-2'),
+    fieldFive = $('#number-5'),
+    fieldSix = $('#number-6'),
+    fieldSeven = $('#number-7'),
+    fieldEight = $('#number-8'),
+    fieldNine = $('#number-9'),
+    fieldTen = $('#number-10'),
+    resultField = $('#result'),
+    occupationField = $('#occupation'),
+    occupations = ["Cook", "Copywriter", "Car Mechanic", "Civil Engineer", "Credit analyst", "Consultant", "Cleaner", "Clerk", "Driver", "Economist", "Electrical Engineer", "Finance Broker", "Finance Manager", "Janitor", "Manager", "File Clerk", "Office Clerk", "Stock clerk", "Assistant", "Project engineer", "Radio Mechanics", "Sales Manager", "Sales Promoter", "Administrator", "Systems Analyst", "Web Designer", "Auditing clerk", "Bus driver", "Cashier", "Fitness Trainer", "Secretary", "Web Developer", "Marketing Manager", "Accountant", "Mechanical Engineer", "IT Manager", "Logistician", "Insurance Agent", "HR Specialist", "Receptionist", "Auto Mechanic", "Security Guard", "Guard", "Financial Analyst"],
+    minNumber = 36,
+    maxNumber = 60;
   minNumberTwo = 8000,
-  maxNumberTwo = 12000;
+    maxNumberTwo = 12000;
   minNumberThree = 212,
-  maxNumberThree = 240;
+    maxNumberThree = 240;
   minNumberFour = 164,
-  maxNumberFour = 212;
+    maxNumberFour = 212;
 
 
 
-$('.generator-first').on('click', function(e) {
-  e.preventDefault();
+  $('.generator-first').on('click', function (e) {
+    e.preventDefault();
 
-  var generatedPassword = getRandomFromArray(passSymbChar) + getRandomFromPossible(passNumChar) + getRandomFromPossible(passAlphaChar) + getRandomFromPossible(passAlphaSmChar) + getRandomFromArray(passSymbChar);
-  passField.val(generatedPassword);
+    var generatedPassword = getRandomFromArray(passSymbChar) + getRandomFromPossible(passNumChar) + getRandomFromPossible(passAlphaChar) + getRandomFromPossible(passAlphaSmChar) + getRandomFromArray(passSymbChar);
 
-})
+    passField.val(generatedPassword);
+
+  })
 
 
 });
-
 
 
 

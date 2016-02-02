@@ -1,3 +1,4 @@
+$(document).ready(function () {
 var passSymbChar = ['!', '@', '#', '$', '%', '&', '*'];
 var passNumChar = "23456789";
 var passAlphaChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -18,7 +19,7 @@ function getRandomFromPossible(possible) {
 
 
 
-$(document).ready(function () {
+
   var passField = $('#pass'),
     fieldThree = $('#random-number'),
     fieldFour = $('#random-number-2'),
@@ -169,29 +170,174 @@ $(document).ready(function () {
 
   })
 
+  // random number generator
+  function randNumFrRang(min, max) {
+    var randomNumber = Math.floor(Math.random() * (max - min + 1) + min);
+    return randomNumber;
+  }
+
+  // random month generator
+  function randomMonth() {
+    var randMnth = Math.floor(Math.random() * (12 - 1 + 1) + 1);
+    if ( randMnth < 10 ) {
+      randMnth = '0' + randMnth;
+    }
+    return randMnth;
+  }
 
 
+  $('.state-or').on('click', function (e) {
+    e.preventDefault();
+    $('.button-active').removeClass('button-active');
+    $(this).addClass('button-active');
 
+    var startYear = randNumFrRang(2009,2014);
+    var endYear = startYear + 8;
 
+    var secHtml = '';
+    secHtml += '3' + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + '<br/>';
 
+    secHtml += randomMonth() + '/' + randomMonth() + '/' + startYear + '<br/>';
+    secHtml += randomMonth() + '/' + randomMonth() + '/' + endYear;
 
+    $('.resulblock-second').html(secHtml);
+  });
 
+  $('.state-ca').on('click', function (e) {
+    e.preventDefault();
+    $('.button-active').removeClass('button-active');
+    $(this).addClass('button-active');
 
+    var startYear = randNumFrRang(2009,2014);
+    var endYear = startYear + 8;
 
+    var secHtml = '';
+    secHtml += 'B2' + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + '<br/>';
 
+    secHtml += randomMonth() + '/' + randomMonth() + '/' + startYear + '<br/>';
+    secHtml += randomMonth() + '/' + randomMonth() + '/' + endYear;
 
+    $('.resulblock-second').html(secHtml);
+  });
 
+  $('.state-il').on('click', function (e) {
+    e.preventDefault();
+    $('.button-active').removeClass('button-active');
+    $(this).addClass('button-active');
 
+    var startYear = randNumFrRang(2009,2014);
+    var endYear = startYear + 8;
 
+    var secHtml = '';
+    secHtml += 'D40' + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + '<br/>';
 
+    secHtml += randomMonth() + '/' + randomMonth() + '/' + startYear + '<br/>';
+    secHtml += randomMonth() + '/' + randomMonth() + '/' + endYear;
 
+    $('.resulblock-second').html(secHtml);
+  });
 
+  $('.state-al').on('click', function (e) {
+    e.preventDefault();
+    $('.button-active').removeClass('button-active');
+    $(this).addClass('button-active');
 
+    var startYear = randNumFrRang(2009,2014);
+    var endYear = startYear + 8;
 
+    var secHtml = '';
+    secHtml += '8' + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + '<br/>';
 
-});
+    secHtml += randomMonth() + '/' + randomMonth() + '/' + startYear + '<br/>';
+    secHtml += randomMonth() + '/' + randomMonth() + '/' + endYear;
 
+    $('.resulblock-second').html(secHtml);
+  });
 
+  $('.state-ny').on('click', function (e) {
+    e.preventDefault();
+    $('.button-active').removeClass('button-active');
+    $(this).addClass('button-active');
+
+    var startYear = randNumFrRang(2009,2014);
+    var endYear = startYear + 8;
+
+    var secHtml = '';
+    secHtml += '4' + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + '<br/>';
+
+    secHtml += randomMonth() + '/' + randomMonth() + '/' + startYear + '<br/>';
+    secHtml += randomMonth() + '/' + randomMonth() + '/' + endYear;
+
+    $('.resulblock-second').html(secHtml);
+  });
+
+  $('.state-tx').on('click', function (e) {
+    e.preventDefault();
+    $('.button-active').removeClass('button-active');
+    $(this).addClass('button-active');
+
+    var startYear = randNumFrRang(2009,2014);
+    var endYear = startYear + 8;
+
+    var secHtml = '';
+    secHtml += '1' + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + '<br/>';
+
+    secHtml += randomMonth() + '/' + randomMonth() + '/' + startYear + '<br/>';
+    secHtml += randomMonth() + '/' + randomMonth() + '/' + endYear;
+
+    $('.resulblock-second').html(secHtml);
+  });
+
+  $('.state-id').on('click', function (e) {
+    e.preventDefault();
+    $('.button-active').removeClass('button-active');
+    $(this).addClass('button-active');
+
+    var startYear = randNumFrRang(2009,2014);
+    var endYear = startYear + 8;
+
+    var secHtml = '';
+    secHtml += 'A2' + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + '<br/>';
+
+    secHtml += randomMonth() + '/' + randomMonth() + '/' + startYear + '<br/>';
+    secHtml += randomMonth() + '/' + randomMonth() + '/' + endYear;
+
+    $('.resulblock-second').html(secHtml);
+  });
+
+  $('.state-ga').on('click', function (e) {
+    e.preventDefault();
+    $('.button-active').removeClass('button-active');
+    $(this).addClass('button-active');
+
+    var startYear = randNumFrRang(2009,2014);
+    var endYear = startYear + 8;
+
+    var secHtml = '';
+    secHtml += '1' + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + '<br/>';
+
+    secHtml += randomMonth() + '/' + randomMonth() + '/' + startYear + '<br/>';
+    secHtml += randomMonth() + '/' + randomMonth() + '/' + endYear;
+
+    $('.resulblock-second').html(secHtml);
+  });
+
+  $('.state-fl').on('click', function (e) {
+    e.preventDefault();
+    $('.button-active').removeClass('button-active');
+    $(this).addClass('button-active');
+
+    var startYear = randNumFrRang(2009,2014);
+    var endYear = startYear + 8;
+
+    var secHtml = '';
+    secHtml += 'L2' + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + '0' + '<br/>';
+
+    secHtml += randomMonth() + '/' + randomMonth() + '/' + startYear + '<br/>';
+    secHtml += randomMonth() + '/' + randomMonth() + '/' + endYear;
+
+    $('.resulblock-second').html(secHtml);
+  });
 
 
 
@@ -226,4 +372,25 @@ client.on('error', function(event) {
 // console.log( 'ZeroClipboard error of type "' + event.name + '": ' + event.message );
   ZeroClipboard.destroy();
 });
+
+var client2 = new ZeroClipboard($('.resulblock-second'));
+client2.on('ready', function(event) {
+// console.log( 'movie is loaded' );
+  client2.on('copy', function(event) {
+    event.clipboardData.setData('text/plain', event.target.innerText);
+  });
+  client2.on('aftercopy', function(event) {
+    console.log('Copied text to clipboard: ' + event.data['text/plain']);
+  });
+});
+client2.on('error', function(event) {
+// console.log( 'ZeroClipboard error of type "' + event.name + '": ' + event.message );
+  ZeroClipboard.destroy();
+});
+
+
+
+
+});
+
 

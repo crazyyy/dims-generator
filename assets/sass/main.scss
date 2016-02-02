@@ -25,7 +25,7 @@ body {
   background-position: center;
   background-size: 100% 100%;
   &.mylittleponys {
-    background-image: url(../img/bg.gif);
+    /* background-image: url(../img/bg.gif); */
   }
 }
 a {
@@ -99,12 +99,6 @@ section {
       }
     }
   }
-  .form-first {
-    float: left;
-
-    width: 50%;
-    padding: 10px;
-  }
   form {
     width: 100%;
 
@@ -141,23 +135,53 @@ section {
         color: red;
       }
     }
-    .resulblock {
-      line-height: 1.4;
-
-      float: right;
-
-      width: 38%;
-      min-height: 100px;
-      padding: 5px;
-
-      cursor: pointer;
-
-      border: 3px solid orange;
-      border-radius: 4px;
-    }
   }
 }
+.resulblock,
+.resulblock-second {
+  line-height: 1.4;
 
+  float: right;
+
+  width: 38%;
+  min-height: 100px;
+  padding: 5px;
+
+  cursor: pointer;
+
+  border: 3px solid orange;
+  border-radius: 4px;
+}
+.form-first,
+.form-second {
+  float: left;
+
+  width: 50%;
+  padding: 10px;
+}
+
+.form-second {
+  ul {
+    margin: 0 0 20px;
+    padding: 0;
+
+    @extend .clearfix;
+    li {
+      display: inline-block;
+      float: left;
+
+      width: 33%;
+      margin: 0 0 10px;
+      padding: 0 5px;
+    }
+  }
+  button {
+    margin: 0;
+  }
+  .resulblock-second {
+    width: 100%;
+  }
+}
 
 footer {
   position: relative;

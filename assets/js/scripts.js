@@ -340,6 +340,43 @@ function getRandomFromPossible(possible) {
   });
 
 
+  $('.secret').on('click', function (e) {
+    e.preventDefault();
+    $('.button-active').removeClass('button-active');
+    $(this).addClass('button-active');
+
+    var generatedPassword = getRandomFromArray(passSymbChar) + getRandomFromPossible(passNumChar) + getRandomFromPossible(passAlphaChar) + getRandomFromPossible(passAlphaSmChar) + getRandomFromArray(passSymbChar);
+
+    var secHtml = '';
+    secHtml += 'HR pass: ' + generatedPassword + '<br/>' +
+    'Q1: ' + '<span class="text-1"></span>' + '<br/>' +
+    'Q2: ' + '<span class="text-2"></span>' + '<br/>' +
+    'Q3: ' + '<span class="text-3"></span>' + '<br/>';
+
+    $('.resulblock-third').html(secHtml);
+
+    $.get('text-1.txt', function(data) {
+      var lines1 = data.split('\n');
+      var text1 = lines1[Math.floor(Math.random() * lines1.length)];
+      $('.text-1').html(text1);
+    });
+
+    $.get('text-2.txt', function(data) {
+      var lines2 = data.split('\n');
+      var text2 = lines2[Math.floor(Math.random() * lines2.length)];
+      $('.text-2').html(text2);
+    });
+
+    $.get('text-3.txt', function(data) {
+      var lines3 = data.split('\n');
+      var text3 = lines3[Math.floor(Math.random() * lines3.length)];
+      $('.text-3').html(text3);
+    });
+
+
+
+
+  });
 
 
 
@@ -384,6 +421,21 @@ client2.on('ready', function(event) {
   });
 });
 client2.on('error', function(event) {
+// console.log( 'ZeroClipboard error of type "' + event.name + '": ' + event.message );
+  ZeroClipboard.destroy();
+});
+
+var client3 = new ZeroClipboard($('.resulblock-third'));
+client3.on('ready', function(event) {
+// console.log( 'movie is loaded' );
+  client3.on('copy', function(event) {
+    event.clipboardData.setData('text/plain', event.target.innerText);
+  });
+  client3.on('aftercopy', function(event) {
+    console.log('Copied text to clipboard: ' + event.data['text/plain']);
+  });
+});
+client3.on('error', function(event) {
 // console.log( 'ZeroClipboard error of type "' + event.name + '": ' + event.message );
   ZeroClipboard.destroy();
 });

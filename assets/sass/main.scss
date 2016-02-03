@@ -70,7 +70,8 @@ header {
 
 
 section {
-  width: $width;
+width: 100%;
+min-width: 700px;
   padding: 0 0 $footer;
 
   @extend .inner;

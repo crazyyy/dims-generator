@@ -314,7 +314,7 @@ function getRandomFromPossible(possible) {
     var endYear = startYear + 8;
 
     var secHtml = '';
-    secHtml += '1' + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + '<br/>';
+    secHtml += '1' + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + '<br/>';
 
     secHtml += randomMonth() + '/' + randomMonth() + '/' + startYear + '<br/>';
     secHtml += randomMonth() + '/' + randomMonth() + '/' + endYear;

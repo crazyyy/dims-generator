@@ -70,8 +70,8 @@ header {
 
 
 section {
-width: 100%;
-min-width: 700px;
+  width: 100%;
+  min-width: 700px;
   padding: 0 0 $footer;
 
   @extend .inner;
@@ -162,7 +162,40 @@ min-width: 700px;
   width: 50%;
   padding: 10px;
 }
+.form-first {
+  td {
+    vertical-align: middle;
 
+    border-top: 1px solid green;
+    border-bottom: 1px solid green;
+  }
+  input[name='random-number-from'],
+  input[name='random-number-to'],
+  input[name='random-number-2-from'],
+  input[name='random-number-2-to'],
+  input[name='number-9-from'],
+  input[name='number-9-to'] {
+    display: block;
+
+    width: auto;
+    margin: 0 5px;
+    padding: 0 5px;
+
+    text-align: center;
+
+    color: #fff;
+  }
+  input[name='random-number-from'],
+  input[name='random-number-2-from'],
+  input[name='number-9-from'] {
+    background-color: lighten(green, 5%);
+  }
+  input[name='random-number-to'],
+  input[name='random-number-2-to'],
+  input[name='number-9-to'] {
+    background-color: lighten(red, 10%);
+  }
+}
 .form-second {
   ul {
     margin: 0 0 20px;
@@ -186,9 +219,9 @@ min-width: 700px;
   }
 }
 .form-third {
-.resulblock-third {
-  width: 100%;
-}
+  .resulblock-third {
+    width: 100%;
+  }
 }
 
 footer {

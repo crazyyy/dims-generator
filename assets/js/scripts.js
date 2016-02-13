@@ -31,14 +31,9 @@ function getRandomFromPossible(possible) {
     fieldTen = $('#number-10'),
     resultField = $('#result'),
     occupationField = $('#occupation'),
-    occupations = ["Cook", "Copywriter", "Car Mechanic", "Civil Engineer", "Credit analyst", "Consultant", "Cleaner", "Clerk", "Driver", "Economist", "Electrical Engineer", "Finance Broker", "Finance Manager", "Janitor", "Manager", "File Clerk", "Office Clerk", "Stock clerk", "Assistant", "Project engineer", "Radio Mechanics", "Sales Manager", "Sales Promoter", "Administrator", "Systems Analyst", "Web Designer", "Auditing clerk", "Bus driver", "Cashier", "Fitness Trainer", "Secretary", "Web Developer", "Marketing Manager", "Accountant", "Mechanical Engineer", "IT Manager", "Logistician", "Insurance Agent", "HR Specialist", "Receptionist", "Auto Mechanic", "Security Guard", "Guard", "Financial Analyst"],
-    minNumber = 36,
-    maxNumber = 60;
-  minNumberTwo = 8000,
-    maxNumberTwo = 12000;
-  minNumberThree = 212,
-    maxNumberThree = 240;
-  minNumberFour = 164,
+    occupations = ["Cook", "Copywriter", "Car Mechanic", "Civil Engineer", "Credit analyst", "Consultant", "Cleaner", "Clerk", "Driver", "Economist", "Electrical Engineer", "Finance Broker", "Finance Manager", "Janitor", "Manager", "File Clerk", "Office Clerk", "Stock clerk", "Assistant", "Project engineer", "Radio Mechanics", "Sales Manager", "Sales Promoter", "Administrator", "Systems Analyst", "Web Designer", "Auditing clerk", "Bus driver", "Cashier", "Fitness Trainer", "Secretary", "Web Developer", "Marketing Manager", "Accountant", "Mechanical Engineer", "IT Manager", "Logistician", "Insurance Agent", "HR Specialist", "Receptionist", "Auto Mechanic", "Security Guard", "Guard", "Financial Analyst"];
+
+    minNumberFour = 164,
     maxNumberFour = 212;
 
   // full block generate
@@ -52,6 +47,9 @@ function getRandomFromPossible(possible) {
     var generatedPassword = getRandomFromArray(passSymbChar) + getRandomFromPossible(passNumChar) + getRandomFromPossible(passAlphaChar) + getRandomFromPossible(passAlphaSmChar) + getRandomFromArray(passSymbChar);
     passField.val(generatedPassword);
 
+    var minNumber = $( "input[name=random-number-from]" ).val();
+    var maxNumber = $( "input[name=random-number-to]" ).val();
+
     randomNumberFromRange(minNumber / 2, maxNumber / 2);
     function randomNumberFromRange(min, max) {
       var randomNumber = Math.floor(Math.random() * (max - min + 1) + min);
@@ -59,6 +57,9 @@ function getRandomFromPossible(possible) {
     }
 
     occupationField.val(occupations[Math.floor(Math.random() * occupations.length)]);
+
+    var minNumberTwo = $( "input[name=random-number-2-from]" ).val();
+    var maxNumberTwo = $( "input[name=random-number-2-to]" ).val();
 
     randomNumberFromRangeTwo(minNumberTwo / 2, maxNumberTwo / 2);
     function randomNumberFromRangeTwo(min, max) {
@@ -72,6 +73,9 @@ function getRandomFromPossible(possible) {
     fieldSix.val(Math.round(fieldFourVal / 100 * fieldFivePercent));
     fieldSeven.val(Math.round(fieldFourVal / 100 * 6.2));
     fieldEight.val(Math.round(fieldFourVal / 100 * 1.45));
+
+    var minNumberThree = $( "input[name=number-9-from]" ).val();
+    var maxNumberThree = $( "input[name=number-9-to]" ).val();
 
     randomNumberFromRangeThree(minNumberThree / 2, maxNumberThree / 2);
     function randomNumberFromRangeThree(min, max) {
@@ -110,6 +114,9 @@ function getRandomFromPossible(possible) {
     var generatedPassword = getRandomFromArray(passSymbChar) + getRandomFromPossible(passNumChar) + getRandomFromPossible(passAlphaChar) + getRandomFromPossible(passAlphaSmChar) + getRandomFromArray(passSymbChar);
     passField.val(generatedPassword);
 
+    var minNumber = $( "input[name=random-number-from]" ).val();
+    var maxNumber = $( "input[name=random-number-to]" ).val();
+
     randomNumberFromRange(minNumber / 2, maxNumber / 2);
     function randomNumberFromRange(min, max) {
       var randomNumber = Math.floor(Math.random() * (max - min + 1) + min);
@@ -133,6 +140,9 @@ function getRandomFromPossible(possible) {
 
     occupationField.val(occupations[Math.floor(Math.random() * occupations.length)]);
 
+    var minNumberTwo = $( "input[name=random-number-2-from]" ).val();
+    var maxNumberTwo = $( "input[name=random-number-2-to]" ).val();
+
     randomNumberFromRangeTwo(minNumberTwo / 2, maxNumberTwo / 2);
     function randomNumberFromRangeTwo(min, max) {
       var randomNumberTwo = Math.floor(Math.random() * (max - min + 1) + min);
@@ -145,6 +155,9 @@ function getRandomFromPossible(possible) {
     fieldSix.val(Math.round(fieldFourVal / 100 * fieldFivePercent));
     fieldSeven.val(Math.round(fieldFourVal / 100 * 6.2));
     fieldEight.val(Math.round(fieldFourVal / 100 * 1.45));
+
+    var minNumberThree = $( "input[name=number-9-from]" ).val();
+    var maxNumberThree = $( "input[name=number-9-to]" ).val();
 
     randomNumberFromRangeThree(minNumberThree / 2, maxNumberThree / 2);
     function randomNumberFromRangeThree(min, max) {

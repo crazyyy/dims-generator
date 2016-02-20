@@ -207,7 +207,7 @@ function getRandomFromPossible(possible) {
     var startYear = randNumFrRang(2009,2014);
     var endYear = startYear + 8;
 
-    var secHtml = '';
+    var secHtml = 'OR<br />';
     secHtml += '3' + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + '<br/>';
 
     secHtml += randomMonth() + '/' + randomMonth() + '/' + startYear + '<br/>';
@@ -224,7 +224,7 @@ function getRandomFromPossible(possible) {
     var startYear = randNumFrRang(2009,2014);
     var endYear = startYear + 8;
 
-    var secHtml = '';
+    var secHtml = 'CA<br />';
     secHtml += 'B2' + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + '<br/>';
 
     secHtml += randomMonth() + '/' + randomMonth() + '/' + startYear + '<br/>';
@@ -241,7 +241,7 @@ function getRandomFromPossible(possible) {
     var startYear = randNumFrRang(2009,2014);
     var endYear = startYear + 8;
 
-    var secHtml = '';
+    var secHtml = 'IL<br />';
     secHtml += 'D40' + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + '<br/>';
 
     secHtml += randomMonth() + '/' + randomMonth() + '/' + startYear + '<br/>';
@@ -258,7 +258,7 @@ function getRandomFromPossible(possible) {
     var startYear = randNumFrRang(2009,2014);
     var endYear = startYear + 8;
 
-    var secHtml = '';
+    var secHtml = 'AL<br />';
     secHtml += '8' + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + '<br/>';
 
     secHtml += randomMonth() + '/' + randomMonth() + '/' + startYear + '<br/>';
@@ -275,7 +275,7 @@ function getRandomFromPossible(possible) {
     var startYear = randNumFrRang(2009,2014);
     var endYear = startYear + 8;
 
-    var secHtml = '';
+    var secHtml = 'NY<br />';
     secHtml += '4' + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + '<br/>';
 
     secHtml += randomMonth() + '/' + randomMonth() + '/' + startYear + '<br/>';
@@ -292,7 +292,7 @@ function getRandomFromPossible(possible) {
     var startYear = randNumFrRang(2009,2014);
     var endYear = startYear + 8;
 
-    var secHtml = '';
+    var secHtml = 'TX<br />';
     secHtml += '1' + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + '<br/>';
 
     secHtml += randomMonth() + '/' + randomMonth() + '/' + startYear + '<br/>';
@@ -309,7 +309,7 @@ function getRandomFromPossible(possible) {
     var startYear = randNumFrRang(2009,2014);
     var endYear = startYear + 8;
 
-    var secHtml = '';
+    var secHtml = 'ID<br />';
     secHtml += 'A2' + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + '<br/>';
 
     secHtml += randomMonth() + '/' + randomMonth() + '/' + startYear + '<br/>';
@@ -326,7 +326,7 @@ function getRandomFromPossible(possible) {
     var startYear = randNumFrRang(2009,2014);
     var endYear = startYear + 8;
 
-    var secHtml = '';
+    var secHtml = 'GA<br />';
     secHtml += '1' + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + '<br/>';
 
     secHtml += randomMonth() + '/' + randomMonth() + '/' + startYear + '<br/>';
@@ -343,8 +343,59 @@ function getRandomFromPossible(possible) {
     var startYear = randNumFrRang(2009,2014);
     var endYear = startYear + 8;
 
-    var secHtml = '';
+    var secHtml = 'FL<br />';
     secHtml += 'L2' + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + '0' + '<br/>';
+
+    secHtml += randomMonth() + '/' + randomMonth() + '/' + startYear + '<br/>';
+    secHtml += randomMonth() + '/' + randomMonth() + '/' + endYear;
+
+    $('.resulblock-second').html(secHtml);
+  });
+
+  $('.state-az').on('click', function (e) {
+    e.preventDefault();
+    $('.button-active').removeClass('button-active');
+    $(this).addClass('button-active');
+
+    var startYear = randNumFrRang(2009,2014);
+    var endYear = startYear + 8;
+
+    var secHtml = 'AZ<br />';
+    secHtml += 'D5' + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + '<br/>';
+
+    secHtml += randomMonth() + '/' + randomMonth() + '/' + startYear + '<br/>';
+    secHtml += randomMonth() + '/' + randomMonth() + '/' + endYear;
+
+    $('.resulblock-second').html(secHtml);
+  });
+
+  $('.state-ar').on('click', function (e) {
+    e.preventDefault();
+    $('.button-active').removeClass('button-active');
+    $(this).addClass('button-active');
+
+    var startYear = randNumFrRang(2009,2014);
+    var endYear = startYear + 8;
+
+    var secHtml = 'AR<br />';
+    secHtml += '9' + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + '<br/>';
+
+    secHtml += randomMonth() + '/' + randomMonth() + '/' + startYear + '<br/>';
+    secHtml += randomMonth() + '/' + randomMonth() + '/' + endYear;
+
+    $('.resulblock-second').html(secHtml);
+  });
+
+  $('.state-ak').on('click', function (e) {
+    e.preventDefault();
+    $('.button-active').removeClass('button-active');
+    $(this).addClass('button-active');
+
+    var startYear = randNumFrRang(2009,2014);
+    var endYear = startYear + 8;
+
+    var secHtml = 'AK<br />';
+    secHtml += '5' + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + randNumFrRang(0,9) + '<br/>';
 
     secHtml += randomMonth() + '/' + randomMonth() + '/' + startYear + '<br/>';
     secHtml += randomMonth() + '/' + randomMonth() + '/' + endYear;

@@ -3,6 +3,7 @@
 *.sublime-workspace
 .sass-cache
 .sublime-gulp.cache
+.hiddenlink
 /.hg
 _gsdata_
 node_modules

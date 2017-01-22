@@ -1,0 +1,72 @@
+New York
+Los Angeles
+Brooklyn
+Queens
+Houston
+Manhattan
+Philadelphia
+Phoenix
+San Antonio
+Bronx
+San Diego
+Dallas
+Austin
+Jacksonville
+San Francisco
+Indianapolis
+Columbus
+Fort Worth
+Charlotte
+Detroit
+El Paso
+Seattle
+Denver
+Washington
+Memphis
+Boston
+Baltimore
+Portland
+Las Vegas
+Tucson
+Fresno
+East Seattle
+Sacramento
+Staten Island
+Long Beach
+Kansas City
+Mesa
+Northwest
+Atlanta
+Raleigh
+Miami
+Oakland
+Minneapolis
+Tulsa
+Cleveland
+Wichita
+New Orleans
+Arlington
+North Coast
+Honolulu
+Bakersfield
+Tampa
+Anaheim
+Santa Ana
+South Aurora
+Corpus Christi
+Riverside
+West Adams
+Pittsburgh
+Anchorage
+Southeast
+Fayette
+Greensboro
+Toledo
+Newark
+Henderson
+Lincoln
+Louisville
+Orlando
+Jersey City
+Chula Vista
+Buffalo

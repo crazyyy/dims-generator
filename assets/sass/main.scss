@@ -13,13 +13,11 @@ $footer_margin: $footer - 2 * $footer;
 $color: #444;
 $color_a: #000;
 $trs: all .5s;
-
 body {
   /* font-family: 'matrix'; */
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   font-weight: normal;
-
   color: $color;
   background-repeat: no-repeat;
   background-position: center;
@@ -28,9 +26,9 @@ body {
     /* background-image: url(../img/bg.gif); */
   }
 }
+
 a {
   transition: $trs;
-
   color: $color_a;
   &:hover {
     color: lighten($color_a, 10%);
@@ -42,16 +40,15 @@ a {
 
 .wrapper {
   position: relative;
-
   width: 100%;
   height: auto !important;
   height: 100%;
   min-height: 100%;
   margin: 0 auto;
 }
+
 .inner {
   position: relative;
-
   width: $width;
   margin: 0 auto;
 }
@@ -60,7 +57,6 @@ header {
   height: 10px;
   .logo {
     display: block;
-
     width: 100px;
     img {
       max-width: 100%;
@@ -68,23 +64,18 @@ header {
   }
 }
 
-
 section {
   width: 100%;
   min-width: 700px;
   padding: 0 0 $footer;
-
   @extend .inner;
   @extend .clearfix;
   button {
     display: block;
-
     width: 100%;
     margin: 0 auto 20px;
     padding: 5px 0;
-
     text-align: center;
-
     border-radius: 8px;
     span {
       display: none;
@@ -93,20 +84,16 @@ section {
       background-color: green;
       span {
         font-weight: bold;
-
         display: inline;
-
         color: red;
       }
     }
   }
   form {
     width: 100%;
-
     @extend .clearfix;
     table {
       float: left;
-
       width: 60%;
       td {
         width: 65%;
@@ -124,48 +111,44 @@ section {
       }
       input {
         font-size: 14px;
-
         height: 25px;
         padding: 3px 5px;
-
         color: #000;
       }
       #number-5 {
         font-weight: bold;
-
         color: red;
       }
     }
   }
 }
+
 .resulblock,
 .resulblock-second,
-.resulblock-third {
+.resulblock-third,
+.resulblock-fourth {
   line-height: 1.4;
-
   float: right;
-
   width: 38%;
   min-height: 100px;
   padding: 5px;
-
   cursor: pointer;
-
   border: 3px solid orange;
   border-radius: 4px;
 }
+
 .form-first,
 .form-second,
-.form-third {
+.form-third,
+.form-fourth {
   float: left;
-
   width: 50%;
   padding: 10px;
 }
+
 .form-first {
   td {
     vertical-align: middle;
-
     border-top: 1px solid green;
     border-bottom: 1px solid green;
   }
@@ -176,13 +159,10 @@ section {
   input[name='number-9-from'],
   input[name='number-9-to'] {
     display: block;
-
     width: auto;
     margin: 0 5px;
     padding: 0 5px;
-
     text-align: center;
-
     color: #fff;
   }
   input[name='random-number-from'],
@@ -196,16 +176,15 @@ section {
     background-color: lighten(red, 10%);
   }
 }
+
 .form-second {
   ul {
     margin: 0 0 20px;
     padding: 0;
-
     @extend .clearfix;
     li {
       display: inline-block;
       float: left;
-
       width: 33%;
       margin: 0 0 10px;
       padding: 0 5px;
@@ -218,15 +197,42 @@ section {
     width: 100%;
   }
 }
+
 .form-third {
   .resulblock-third {
     width: 100%;
   }
 }
 
+.form-fourth {
+  border: 3px dotted darkolivegreen;
+  border-radius: 15px;
+  .resulblock-fourth {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  table {
+    width: 100%;
+    margin-bottom: 10px;
+    tr {
+      td {
+        width: 80%;
+        padding: 5px;
+        input {
+          width: 100%;
+          padding: 3px 5px;
+        }
+        &:first-child {
+          width: 20%;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
 footer {
   position: relative;
-
   width: 100%;
   height: $footer;
   margin: $footer_margin auto 0;

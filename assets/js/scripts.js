@@ -1213,7 +1213,7 @@ $(document).ready(function() {
       }
       var resulrcontent = 'TT pass: ' + generatedPassword + ' <br /> <br /> TT2015(Deluxe + EIC) <br /> Amount: (gift) <br /> <br /> ' +
         fieldFour.val() + '<br />' + col3result + '<br />' +
-        fieldSeven.val() + '<br />' + fieldEight.val() + '<br />' + fieldNine.val() + ' - gambling<br />';
+        // fieldSeven.val() + '<br />' + fieldEight.val() + '<br />' + fieldNine.val() + ' - gambling<br />';
       $('.resulblock').html(resulrcontent);
     })
     // halft top block generate
@@ -1792,9 +1792,9 @@ $(document).ready(function() {
       }
       $('.resulblock').html(
         // 'Occupation: ' + occupationField.val() + '<br /><br />' +
-        fieldFour.val() + '<br />' + col3result + '<br />' +
-        // fieldSix.val() + '<br />' +
-        fieldSeven.val() + '<br />' + fieldEight.val() + '<br />' + fieldNine.val() + ' - gambling<br />'
+        fieldFour.val() + '<br />' + /* col3result + '<br />' */
+       fieldSix.val() + '<br />' +
+        fieldSeven.val() + '<br />' + fieldEight.val() + '<br />' /* + fieldNine.val() + ' - gambling<br />' */
         //  + fieldTen.val() + ' - jscode'
       );
     })

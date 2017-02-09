@@ -151,7 +151,10 @@ section {
 .form-third {
   display: none;
 }
-
+.generator-first,
+.generator-second {
+display: none;
+}
 .form-first {
   td {
     vertical-align: middle;
@@ -182,7 +185,16 @@ section {
     background-color: lighten(red, 10%);
   }
 }
-
+tr {
+  &:nth-child(1),
+  &:nth-child(2),
+  &:nth-child(3),
+  // &:nth-child(4),
+  &:nth-child(6),
+  &:nth-child(10) {
+    display: none;
+  }
+}
 .form-second {
   ul {
     margin: 0 0 20px;

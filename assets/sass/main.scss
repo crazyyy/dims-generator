@@ -184,8 +184,7 @@ display: none;
   input[name='number-9-to'] {
     background-color: lighten(red, 10%);
   }
-}
-tr {
+  tr {
   &:nth-child(1),
   &:nth-child(2),
   &:nth-child(3),
@@ -195,6 +194,8 @@ tr {
     display: none;
   }
 }
+}
+
 .form-second {
   ul {
     margin: 0 0 20px;

@@ -2023,20 +2023,20 @@ $(document).ready(function() {
     ZeroClipboard.destroy();
   });
 
-  var client4 = new ZeroClipboard($('.resulblock-fourth'));
-  client4.on('ready', function(event) {
-    // console.log( 'movie is loaded' );
-    client4.on('copy', function(event) {
-      event.clipboardData.setData('text/plain', event.target.innerText);
-    });
-    client4.on('aftercopy', function(event) {
-      console.log('Copied text to clipboard: ' + event.data['text/plain']);
-    });
-  });
-  client4.on('error', function(event) {
-    // console.log( 'ZeroClipboard error of type "' + event.name + '": ' + event.message );
-    ZeroClipboard.destroy();
-  });
+  // var client4 = new ZeroClipboard($('.resulblock-fourth'));
+  // client4.on('ready', function(event) {
+  //   // console.log( 'movie is loaded' );
+  //   client4.on('copy', function(event) {
+  //     event.clipboardData.setData('text/plain', event.target.innerText);
+  //   });
+  //   client4.on('aftercopy', function(event) {
+  //     console.log('Copied text to clipboard: ' + event.data['text/plain']);
+  //   });
+  // });
+  // client4.on('error', function(event) {
+  //   // console.log( 'ZeroClipboard error of type "' + event.name + '": ' + event.message );
+  //   ZeroClipboard.destroy();
+  // });
 
 });
 
